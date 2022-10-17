@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'TSG';
+	src: url('TSG.eot'); /* IE9 Compat Modes */
+	src: url('TSG.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('TSG.woff') format('woff'), /* Modern Browsers */
+	     url('TSG.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('TSG.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+html, body {
+	font-size:100%;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+h1, p, html, body {
+	margin: 0;
+	padding: 0;
+}
+#presentation {
+	position:relative;
+	height:95px;
+	top:0;
+	margin-left:auto;
+	margin-right:auto;
+/*	border:1px solid gray;*/
+}
+#header {
+	position:relative;
+	height:95px;
+	background-image:url('../img/bg_blue.gif');
+	background-repeat:repeat-x;
+/*	border:1px solid gray;*/
+}
+#header p {
+	font-family: 'Tern', 'Verdana', 'Geneva', 'sans-serif';
+	font-size: 4em;
+    text-rendering: optimizeLegibility;
+	color:#d2b2e2;
+	padding:3%;
+	text-align:center;
+	letter-spacing:normal;
+}
+#user {
+	position:absolute;
+	right:0;
+	bottom:0;
+	padding:.5%;
+/*	border:1px solid gray;*/
+}
+#user p {
+	font: 80px/90px 'TSG', 'Comic Sans MS', cursive;
+	font-size:1.2em;
+	line-height: 100%;
+	color:#7f6e98;
+}
+#centergraphic {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	height:65%;
+	padding:2%;
+	top:0;
+/*	border:1px solid gray;*/
+}
+#centergraphic p {
+	font: 80px/90px 'TSG', 'Comic Sans MS', cursive;
+	text-align:center;
+	font-size:1.8em;
+    text-rendering: optimizeLegibility;
+	line-height: 100%;
+}
+#leftnav {
+	font: 80px/90px 'TSG', 'Comic Sans MS', cursive;
+	float: left;
+	align: right;
+	margin-top: 0;
+	width: 24%;
+/*	border:1px solid gray;*/
+}
+#rightnav {
+	font: 90px/100px 'TSG', 'Comic Sans MS', cursive;
+	float: right;
+	width: 24%;
+/*	border:1px solid gray;*/
+}
+#codecentergraphic {
+	position:relative;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	height:99%;
+/*	border:1px solid gray;*/
+}
+#codecentergraphic p {
+	font: 80px/90px 'TSG', 'Comic Sans MS', cursive;
+	text-align:center;
+	font-size:1.8em;
+    text-rendering: optimizeLegibility;
+	line-height: 100%;
+}
+#footer {
+	clear: both;
+	background: #eee;
+	padding: .5%;
+	border-bottom: 2px solid #ddd;
+/*	border:1px solid gray;*/
+}
+#footer p {
+	font: 80px/90px 'TSG', 'Comic Sans MS', cursive;
+	text-align:center;
+	font-size:1.2em;
+	color:#7f6e98;
+}

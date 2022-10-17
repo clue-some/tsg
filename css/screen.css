@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff url('../images/bg.gif') repeat-x top;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+#wrap {
+	margin: 0 auto;
+	width: 900px;
+}
+#header {
+	width: 900px;
+	height: 30px;
+}
+#header h1 {
+	color: #fff;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+#content {
+	width: 900px;
+}
+#footer {
+	clear: both;
+	padding: 10px;
+	background: #eee;
+	border-bottom: 2px solid #ddd;
+}

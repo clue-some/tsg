@@ -1,0 +1,44 @@
+<?php
+/**
+ * tracksuitgene/php/front.tsg
+ *
+ * The main front page.
+ *
+ * written by Pred MacLinty for Tracksuitgene.
+ *
+ */
+include ("include/session.php");
+include ("page.php");
+
+// user agents don't play nice
+$agent = get_browser(null, true);
+$isIEagent = $agent['browser'] == 'IE';
+
+switch ($_GET["mode"])
+{
+	case "login":
+    	if (! $session->logged_in)
+    	{
+    		$page = new LoginPage ($isIEagent);
+    		break;
+    	}
+    case "code":
+    	if (! $session->logged_in)
+    	{
+	    	$page = new CodePage ($isIEagent);
+	    	break;
+    	}
+    case "back":
+    	if ($session->logged_in)
+    	{
+	    	$page = new BackPage ($isIEagent);
+	    	break;
+    	}
+    default:
+	  	$page = new Page ($isIEagent);
+}
+
+$page->doctype ('xhtml', 'svg', '1.1'); /* Phil: sends header b4 first tags - may need to change 4 login */
+$page->head (array ('tsg'), array ('inkweb'));
+$page->body ($session->username);
+?>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<link id="stylesheetLink" rel="stylesheet" href="#" />
+<script language="JavaScript">
+var smallStylesheetLink = "small.css";
+var normalStylesheetLink = "normal.css";
+
+function setStyle() {
+	var width, height;
+	if(window.innerWidth) {
+		width = window.innerWidth;
+		height = window.innerHeight;
+	}
+	else if(document.documentElement.clientWidth) {
+		width = document.documentElement.clientWidth;
+		height = document.documentElement.clientHeight;
+	}
+	else if(document.body.clientWidth) {
+		width = document.body.clientWidth;
+		height = document.body.clientHeight;
+	}
+	var stylesheetLink = document.getElementById("stylesheetLink");
+	var useSmall = (width <= 800 && height <= 600);
+	stylesheetLink.setAttribute("href", (useSmall ? smallStylesheetLink : normalStylesheetLink));
+}
+
+setStyle();
+</script>
+</head>
+<body>
+<h1>Using Different Stylesheets</h1>
+</body>
+</html>

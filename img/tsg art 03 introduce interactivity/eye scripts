@@ -1,0 +1,14 @@
+OnMouseOver:
+InkWeb.setAtt (
+{
+	el:['path3717','path3719','path3721','path3723'], 
+	att:'fill stroke stroke-width fill-opacity stroke-opacity', 
+	val:'1e476c 1e476c 0.04725114 1 1'
+});
+
+OnMouseOut:
+InkWeb.setAtt (
+{
+	el:['path3717','path3719','path3721','path3723'], 
+	att:'fill stroke fill-opacity stroke-opacity', 
+	val:'0 0 0 0'});

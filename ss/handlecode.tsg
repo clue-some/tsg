@@ -1,0 +1,11 @@
+<?php
+include ("include/session.php");
+if (!empty($_POST["code"]))
+{
+	$code = $_GET["code"];
+
+}
+//acquire the code
+//test it against the database
+//return a result
+?>
